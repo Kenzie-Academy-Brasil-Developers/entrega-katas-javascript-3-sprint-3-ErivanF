@@ -2,6 +2,11 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
 
 function kata1() {
     // implemente o código do kata 1 aqui
+    const resultado = []
+    for(let i=1;i<26;i++){
+        resultado.push(i)
+    }
+    showResults(resultado)
 }
 
 function kata2() {
@@ -96,9 +101,8 @@ function kataBonus5() {
     // implemente o código do kata bonus 5 aqui
 }
 function showResults(linha){
-    let elemento=document.createElement(p)
-    console.log(elemento)
-    elemento.text = linha
-    console.log(elemento)
-
+    const elemento=document.createElement('p')
+    elemento.innerText = linha
+    const corpo=document.querySelector("body")
+    corpo.appendChild(elemento)
 }
