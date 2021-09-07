@@ -95,3 +95,10 @@ function kataBonus4() {
 function kataBonus5() {
     // implemente o código do kata bonus 5 aqui
 }
+function showResults(linha){
+    let elemento=document.createElement(p)
+    console.log(elemento)
+    elemento.text = linha
+    console.log(elemento)
+
+}
