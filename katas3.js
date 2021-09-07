@@ -11,14 +11,29 @@ function kata1() {
 
 function kata2() {
     // implemente o código do kata 2 aqui
+    const resultado = []
+    for(let i=25;i>0;i--){
+        resultado.push(i)
+    }
+    showResults(resultado)
 }
 
 function kata3() {
     // implemente o código do kata 3 aqui
+    const resultado = []
+    for(let i=-1;i>-26;i--){
+        resultado.push(i)
+    }
+    showResults(resultado)
 }
 
 function kata4() {
     // implemente o código do kata 4 aqui
+    const resultado = []
+    for(let i=-25;i<0;i++){
+        resultado.push(i)
+    }
+    showResults(resultado)
 }
 
 function kata5() {
