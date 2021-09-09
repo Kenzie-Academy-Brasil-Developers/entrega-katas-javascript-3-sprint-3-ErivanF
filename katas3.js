@@ -1,40 +1,40 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 showHeader('Kata 1')
-kata1()
+showResults(kata1())
 showHeader('Kata 2')
-kata2()
+showResults(kata2())
 showHeader('Kata 3')
-kata3()
+showResults(kata3())
 showHeader('Kata 4')
-kata4()
+showResults(kata4())
 showHeader('Kata 5')
-kata5()
+showResults(kata5())
 showHeader('Kata 6')
-kata6()
+showResults(kata6())
 showHeader('Kata 7')
-kata7()
+showResults(kata7())
 showHeader('Kata 8')
-kata8()
+showResults(kata8())
 showHeader('Kata 9')
-kata9()
+showResults(kata9())
 showHeader('Kata 10')
-kata10()
+showResults(kata10())
 showHeader('Kata 11')
-kata11()
+showResults(kata11())
 showHeader('Kata 12')
-kata12()
+showResults(kata12())
 showHeader('Kata 13')
-kata13()
+showResults(kata13())
 showHeader('Kata 14')
-kata14()
+showResults(kata14())
 showHeader('Kata 15')
-kata15()
+showResults(kata15())
 showHeader('Kata 16')
-kata16()
+showResults(kata16())
 showHeader('Kata 17')
-kata17()
+showResults(kata17())
 showHeader('Kata 18')
-kata18()
+showResults(kata18())
 showHeader('Kata Bônus 1')
 kataBonus1()
 showHeader('Kata Bônus 2')
@@ -60,7 +60,7 @@ function kata2() {
     for(let i=25;i>0;i--){
         resultado.push(i)
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata3() {
@@ -69,7 +69,7 @@ function kata3() {
     for(let i=-1;i>-26;i--){
         resultado.push(i)
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata4() {
@@ -78,7 +78,7 @@ function kata4() {
     for(let i=-25;i<0;i++){
         resultado.push(i)
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata5() {
@@ -89,7 +89,7 @@ function kata5() {
             resultado.push(i)
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata6() {
@@ -100,7 +100,7 @@ function kata6() {
             resultado.push(i)
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata7() {
@@ -111,7 +111,7 @@ function kata7() {
             resultado.push(i)
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata8() {
@@ -122,7 +122,7 @@ function kata8() {
             resultado.push(i)
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata9() {
@@ -133,7 +133,7 @@ function kata9() {
             resultado.push(i)
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata10() {
@@ -142,7 +142,7 @@ function kata10() {
     for(let i=0;i<sampleArray.length;i++){
         resultado.push(sampleArray[i])
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata11() {
@@ -153,7 +153,7 @@ function kata11() {
             resultado.push(sampleArray[i])
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata12() {
@@ -164,7 +164,7 @@ function kata12() {
             resultado.push(sampleArray[i])
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata13() {
@@ -175,7 +175,7 @@ function kata13() {
             resultado.push(sampleArray[i])
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata14() {
@@ -184,7 +184,7 @@ function kata14() {
     for(let i=0;i<sampleArray.length;i++){
         resultado.push(sampleArray[i]*sampleArray[i])
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata15() {
@@ -193,7 +193,7 @@ function kata15() {
     for(let i=0;i<=20;i++){
         resultado+=i
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata16() {
@@ -202,7 +202,7 @@ function kata16() {
     for(let i=0;i<sampleArray.length;i++){
         resultado+=sampleArray[i]
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata17() {
@@ -213,7 +213,7 @@ function kata17() {
             resultado=sampleArray[i]
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 function kata18() {
@@ -224,7 +224,7 @@ function kata18() {
             resultado=sampleArray[i]
         }
     }
-    showResults(resultado)
+    return(resultado)
 }
 
 /**
