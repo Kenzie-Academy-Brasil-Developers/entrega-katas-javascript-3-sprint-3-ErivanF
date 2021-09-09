@@ -1,40 +1,40 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 showHeader('Kata 1')
-showResults(kata1())
+kata1()
 showHeader('Kata 2')
-showResults(kata2())
+kata2()
 showHeader('Kata 3')
-showResults(kata3())
+kata3()
 showHeader('Kata 4')
-showResults(kata4())
+kata4()
 showHeader('Kata 5')
-showResults(kata5())
+kata5()
 showHeader('Kata 6')
-showResults(kata6())
+kata6()
 showHeader('Kata 7')
-showResults(kata7())
+kata7()
 showHeader('Kata 8')
-showResults(kata8())
+kata8()
 showHeader('Kata 9')
-showResults(kata9())
+kata9()
 showHeader('Kata 10')
-showResults(kata10())
+kata10()
 showHeader('Kata 11')
-showResults(kata11())
+kata11()
 showHeader('Kata 12')
-showResults(kata12())
+kata12()
 showHeader('Kata 13')
-showResults(kata13())
+kata13()
 showHeader('Kata 14')
-showResults(kata14())
+kata14()
 showHeader('Kata 15')
-showResults(kata15())
+kata15()
 showHeader('Kata 16')
-showResults(kata16())
+kata16()
 showHeader('Kata 17')
-showResults(kata17())
+kata17()
 showHeader('Kata 18')
-showResults(kata18())
+kata18()
 showHeader('Kata Bônus 1')
 kataBonus1()
 showHeader('Kata Bônus 2')
@@ -45,6 +45,7 @@ showHeader('Kata Bônus 4')
 kataBonus4()
 showHeader('Kata Bônus 5')
 kataBonus5()
+
 function kata1() {
     // implemente o código do kata 1 aqui
     const resultado = []
@@ -52,6 +53,7 @@ function kata1() {
         resultado.push(i)
     }
     showResults(resultado)
+    return(resultado)
 }
 
 function kata2() {
@@ -60,6 +62,7 @@ function kata2() {
     for(let i=25;i>0;i--){
         resultado.push(i)
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -69,6 +72,7 @@ function kata3() {
     for(let i=-1;i>-26;i--){
         resultado.push(i)
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -78,6 +82,7 @@ function kata4() {
     for(let i=-25;i<0;i++){
         resultado.push(i)
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -89,6 +94,7 @@ function kata5() {
             resultado.push(i)
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -100,6 +106,7 @@ function kata6() {
             resultado.push(i)
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -111,6 +118,7 @@ function kata7() {
             resultado.push(i)
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -122,6 +130,7 @@ function kata8() {
             resultado.push(i)
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -133,6 +142,7 @@ function kata9() {
             resultado.push(i)
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -142,6 +152,7 @@ function kata10() {
     for(let i=0;i<sampleArray.length;i++){
         resultado.push(sampleArray[i])
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -153,6 +164,7 @@ function kata11() {
             resultado.push(sampleArray[i])
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -164,6 +176,7 @@ function kata12() {
             resultado.push(sampleArray[i])
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -175,6 +188,7 @@ function kata13() {
             resultado.push(sampleArray[i])
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -184,6 +198,7 @@ function kata14() {
     for(let i=0;i<sampleArray.length;i++){
         resultado.push(sampleArray[i]*sampleArray[i])
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -193,6 +208,7 @@ function kata15() {
     for(let i=0;i<=20;i++){
         resultado+=i
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -202,6 +218,7 @@ function kata16() {
     for(let i=0;i<sampleArray.length;i++){
         resultado+=sampleArray[i]
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -213,6 +230,7 @@ function kata17() {
             resultado=sampleArray[i]
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -224,6 +242,7 @@ function kata18() {
             resultado=sampleArray[i]
         }
     }
+    showResults(resultado)
     return(resultado)
 }
 
@@ -284,7 +303,7 @@ function kataBonus5() {
 function showResults(linha){
     const elemento=document.createElement('p')
     elemento.innerText = linha
-    const corpo=document.querySelector("body")
+    const corpo = document.querySelector('body')
     corpo.appendChild(elemento)
 }
 function showHeader(titulo){
